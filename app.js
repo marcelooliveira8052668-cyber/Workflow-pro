@@ -6,6 +6,7 @@ import {
 } from "https://www.gstatic.com/firebasejs/12.0.0/firebase-auth.js";
 
 console.log("APP CARREGOU");
+console.log("BOTÃO LOGIN:", btnLogin);
 
 const btnLogin = document.getElementById("btnLogin");
 
