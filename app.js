@@ -1,11 +1,11 @@
-import { auth } from "./firebase/firebase.js";
+import { auth } from "./firebase.js";
 
 import {
   signInWithEmailAndPassword,
   signOut
 } from "https://www.gstatic.com/firebasejs/12.0.0/firebase-auth.js";
 
-console.log("APP CARREGOU");
+console.log("APP.JS CARREGOU");
 
 const btnLogin = document.getElementById("btnLogin");
 console.log("BOTÃO LOGIN:", btnLogin);

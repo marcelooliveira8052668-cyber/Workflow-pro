@@ -1,4 +1,4 @@
-import { db } from "./firebase/firebase.js";
+import { db } from "./firebase.js";
 
 import {
   collection,
@@ -14,6 +14,7 @@ async function carregarTotalFuncionarios() {
     );
 
     const total = snapshot.size;
+    console.log("TOTAL DE FUNCIONÁRIOS:", total);
 
     document.getElementById("totalFuncionarios").innerHTML = total;
 
@@ -26,3 +27,4 @@ async function carregarTotalFuncionarios() {
 }
 
 carregarTotalFuncionarios();
+
