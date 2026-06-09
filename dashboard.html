@@ -1,51 +1,235 @@
 <!DOCTYPE html>
+<!-- Informa ao navegador que estamos usando HTML5 -->
+
 <html lang="pt-BR">
+<!-- Início do documento HTML.
+     O idioma da página é Português do Brasil. -->
+
 
 <head>
+<!-- Área de configurações da página.
+     O conteúdo daqui não aparece na tela. -->
+
 
 <meta charset="UTF-8">
+<!-- Permite usar caracteres especiais.
+
+Exemplos:
+
+á
+é
+ç
+ã
+õ
+-->
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Faz o site funcionar corretamente
+     em celulares, tablets e computadores. -->
+
 
 <title>Dashboard | Workflow Pro</title>
+<!-- Nome exibido na aba do navegador. -->
+
 
 <link rel="stylesheet" href="style.css">
+<!-- Conecta o arquivo CSS.
+     É ele que deixa a página bonita. -->
 
 </head>
 
+
 <body>
+<!-- Tudo dentro do body aparece na tela. -->
+
+
+<!-- =====================================================
+     BARRA SUPERIOR
+     ===================================================== -->
 
 <header class="topbar">
 
+<!--
+Cabeçalho principal do sistema.
+
+Fica no topo da página.
+-->
+
 <h1>Workflow Pro</h1>
 
+<!--
+Nome do sistema.
+-->
+
 <button id="logout">
+
 Sair
+
 </button>
+
+<!--
+Botão para encerrar a sessão.
+
+Quando o usuário clicar:
+
+✔ Sai do sistema
+
+✔ Volta para a tela de login
+
+O JavaScript encontra esse botão através
+do id="logout".
+-->
 
 </header>
 
+
+<!-- =====================================================
+     DASHBOARD
+     ===================================================== -->
+
 <main class="dashboard">
 
+<!--
+Área principal do painel.
+
+Aqui ficam os cartões de informações.
+-->
+
+
+<!-- =====================================================
+     CARD FUNCIONÁRIOS
+     ===================================================== -->
+
 <div class="card">
+
 <h2>Funcionários</h2>
+
+<!--
+Título do card.
+-->
+
 <p id="totalFuncionarios">0</p>
+
+<!--
+Número de funcionários.
+
+Começa com 0.
+
+Depois o dashboard.js substitui
+automaticamente pelo valor real.
+
+Exemplo:
+
+Funcionários
+15
+-->
+
 </div>
 
+
+
+<!-- =====================================================
+     CARD PROJETOS
+     ===================================================== -->
+
 <div class="card">
+
 <h2>Projetos</h2>
+
 <p>0</p>
+
+<!--
+Quantidade de projetos.
+
+Atualmente está fixa em 0.
+
+No futuro poderá buscar dados
+do Firebase.
+-->
+
 </div>
 
+
+
+<!-- =====================================================
+     CARD TAREFAS
+     ===================================================== -->
+
 <div class="card">
+
 <h2>Tarefas</h2>
+
 <p>0</p>
+
+<!--
+Quantidade de tarefas.
+
+Atualmente está fixa em 0.
+
+No futuro poderá mostrar
+as tarefas cadastradas.
+-->
+
 </div>
+
 
 </main>
 
+
+<!-- =====================================================
+     JAVASCRIPT
+     ===================================================== -->
+
+
 <script type="module" src="auth.js"></script>
+
+<!--
+Arquivo responsável pela autenticação.
+
+Pode verificar:
+
+✔ Usuário logado
+
+✔ Usuário deslogado
+
+✔ Proteção da página
+-->
+
+
+
 <script type="module" src="app.js"></script>
+
+<!--
+Arquivo principal do sistema.
+
+Pode conter funções gerais
+utilizadas em várias páginas.
+-->
+
+
+
 <script type="module" src="dashboard.js"></script>
+
+<!--
+Arquivo responsável pelo Dashboard.
+
+Atualmente ele:
+
+✔ Consulta o Firebase
+
+✔ Conta funcionários
+
+✔ Atualiza o card
+
+Exemplo:
+
+Funcionários
+23
+-->
+
+</script>
+
 </body>
 
 </html>
+<!-- Fim do documento HTML -->

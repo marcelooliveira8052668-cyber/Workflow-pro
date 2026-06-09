@@ -1,44 +1,135 @@
 <!DOCTYPE html>
+<!-- Informa ao navegador que estamos usando HTML5 -->
+
 <html lang="pt-BR">
+<!-- Início do documento HTML.
+     pt-BR significa Português do Brasil. -->
 
 <head>
+<!-- Área de configurações da página.
+     Tudo aqui configura o site, mas não aparece na tela. -->
 
 <meta charset="UTF-8">
+<!-- Permite usar acentos e caracteres especiais.
+     Exemplo: á, é, ç, ã, õ. -->
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Faz o site funcionar corretamente em celulares e tablets. -->
 
 <title>Login</title>
+<!-- Nome que aparece na aba do navegador. -->
 
 <link rel="stylesheet" href="style.css">
+<!-- Conecta o arquivo CSS ao HTML.
+     É o CSS que deixa a página bonita. -->
 
 </head>
 
 <body>
+<!-- Tudo que estiver dentro do body aparece na tela. -->
+
 
 <div class="login-box">
+<!-- Caixa principal do login.
+
+     Imagine uma caixa assim:
+
+     +--------------------+
+     |     Workflow Pro   |
+     |                    |
+     |     Email          |
+     |     Senha          |
+     |    [ Entrar ]      |
+     +--------------------+
+-->
 
 <h2>Workflow Pro</h2>
+<!-- Título principal da caixa de login. -->
+
 
 <input
 type="email"
 id="email"
 placeholder="Digite seu email">
+<!-- Campo para o usuário digitar o e-mail.
+
+     type="email"
+     Diz que este campo recebe um e-mail.
+
+     id="email"
+     Nome usado pelo JavaScript para localizar este campo.
+
+     placeholder
+     Texto de exemplo mostrado dentro do campo.
+-->
+
 
 <input
 type="password"
 id="senha"
 placeholder="Digite sua senha">
+<!-- Campo para digitar a senha.
+
+     type="password"
+     Esconde os caracteres digitados.
+
+     Exemplo:
+
+     Senha: ********
+
+     id="senha"
+     Permite que o JavaScript encontre o campo.
+
+     placeholder
+     Texto de ajuda mostrado dentro da caixa.
+-->
+
 
 <button id="btnLogin">
 Entrar
 </button>
+<!-- Botão de login.
+
+     Quando o usuário clicar,
+     o JavaScript executará a ação de entrar.
+
+     id="btnLogin"
+     Nome usado pelo JavaScript para encontrar o botão.
+-->
+
 
 <p id="mensagem"></p>
+<!-- Parágrafo vazio.
+
+     O JavaScript pode colocar mensagens aqui.
+
+     Exemplo:
+
+     Login realizado com sucesso!
+
+     ou
+
+     E-mail ou senha inválidos.
+-->
 
 </div>
+<!-- Fim da caixa de login. -->
+
 
 <script type="module" src="app.js"></script>
+<!-- Conecta o arquivo JavaScript.
+
+     O navegador vai carregar o app.js.
+
+     É nele que ficam as funcionalidades,
+     como login, validações e comunicação com o Firebase.
+
+     type="module"
+     Permite usar import e export no JavaScript moderno.
+-->
 
 </body>
+<!-- Fim da área visível da página. -->
 
 </html>
+<!-- Fim do documento HTML. -->

@@ -1,34 +1,205 @@
 <!DOCTYPE html>
+<!-- Informa ao navegador que estamos usando HTML5 -->
+
 <html lang="pt-BR">
+<!-- Início do documento HTML.
+     O idioma da página é Português do Brasil. -->
+
 <head>
+<!-- Área de configurações da página.
+     O conteúdo daqui não aparece na tela. -->
+
+
 <meta charset="UTF-8">
+<!-- Permite usar caracteres especiais.
+
+Exemplos:
+á
+é
+ç
+ã
+õ
+-->
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Faz a página funcionar corretamente em celulares,
+     tablets e computadores. -->
+
 <title>Funcionários</title>
+<!-- Nome que aparece na aba do navegador. -->
+
 
 <link rel="stylesheet" href="style.css">
+<!-- Conecta o arquivo CSS.
+     É ele que deixa a página bonita. -->
+
 </head>
+
 <body>
+<!-- Tudo dentro do body aparece na tela. -->
+
 
 <h1>Cadastro de Funcionários</h1>
+<!-- Título principal da página. -->
+
+
 <h2>Funcionários Cadastrados</h2>
+<!-- Subtítulo da área de listagem. -->
+
+
 <div id="lista-funcionarios"></div>
 
+<!--
+Área vazia que será preenchida pelo JavaScript.
 
-<input type="text" id="nome" placeholder="Nome">
+Quando a página carregar,
+o funcionarios.js vai criar os cards aqui.
 
-<input type="text" id="cargo" placeholder="Cargo">
+Exemplo:
 
-<input type="text" id="departamento" placeholder="Departamento">
+---------------------------------
+João Silva
+Cargo: Gerente
+Departamento: RH
+Email: joao@email.com
 
-<input type="email" id="email" placeholder="E-mail">
+[Editar] [Excluir]
+---------------------------------
+-->
+
+
+<input
+type="text"
+id="nome"
+placeholder="Nome">
+
+<!--
+Campo para digitar o nome.
+
+type="text"
+Aceita texto comum.
+
+id="nome"
+Permite que o JavaScript encontre o campo.
+
+placeholder
+Texto de exemplo mostrado dentro da caixa.
+-->
+
+
+<input
+type="text"
+id="cargo"
+placeholder="Cargo">
+
+<!--
+Campo para digitar o cargo.
+
+Exemplos:
+Gerente
+Analista
+Supervisor
+Programador
+-->
+
+
+
+<input
+type="text"
+id="departamento"
+placeholder="Departamento">
+
+<!--
+Campo para informar o departamento.
+
+Exemplos:
+RH
+Financeiro
+TI
+Marketing
+Compras
+-->
+
+
+
+<input
+type="email"
+id="email"
+placeholder="E-mail">
+
+<!--
+Campo para digitar o e-mail.
+
+type="email"
+Informa ao navegador que o conteúdo
+deve ter formato de e-mail.
+
+Exemplo:
+
+usuario@email.com
+-->
+
+
 
 <button id="btnSalvar">
+
 Cadastrar
+
 </button>
+
+<!--
+Botão de cadastro.
+
+Quando o usuário clicar,
+o JavaScript executará o cadastro.
+
+id="btnSalvar"
+É o nome usado pelo JavaScript para
+localizar esse botão.
+-->
+
+
 
 <p id="msg"></p>
 
-<script type="module" src="funcionarios.js"></script>
+<!--
+Área de mensagens.
+
+O JavaScript pode escrever aqui:
+
+✅ Funcionário cadastrado com sucesso
+
+ou
+
+❌ Erro ao cadastrar funcionário
+-->
+
+
+
+<script
+type="module"
+src="funcionarios.js">
+</script>
+
+<!--
+Conecta o arquivo funcionarios.js.
+
+É ele que faz:
+
+✔ Cadastrar funcionários
+
+✔ Listar funcionários
+
+✔ Excluir funcionários
+
+✔ Preencher os campos ao clicar em Editar
+
+Sem esse arquivo,
+a página seria apenas visual.
+-->
 
 </body>
+<!-- Fim da área visível da página. -->
+
 </html>
+<!-- Fim do documento HTML -->

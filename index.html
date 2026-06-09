@@ -1,25 +1,200 @@
 <!DOCTYPE html>
+<!--É como dizer ao navegador: Ola! Este arquivo é um site moderno em HTML-->
 <html lang="pt-BR">
+    <!--O que isso faz?
+
+Aqui começa o site.
+
+html = o navegador entende que tudo que vem depois faz parte da página.
+lang="pt-BR" = diz que o idioma é português do Brasil.
+
+É como colocar uma etiqueta:
+
+"Este site está escrito em português."-->
 <head>
+<!--O que isso faz?
+
+O <head> é o cérebro escondido do site.
+
+As informações aqui não aparecem na tela, mas ajudam o navegador a entender a página.-->    
 <meta charset="UTF-8">
+<!--O que isso faz?
+
+Permite usar letras especiais:
+
+✅ ç
+✅ ã
+✅ é
+✅ ô
+
+Sem isso, palavras poderiam aparecer estranhas.
+
+Por exemplo:
+
+Gestão
+
+poderia virar
+
+GestÃ£o-->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--que isso faz?
+
+Faz o site funcionar bem em:
+
+📱 Celular
+💻 Computador
+📟 Tablet
+
+É como dizer:
+
+"Ajuste o tamanho da página para a tela de quem estiver olhando."-->
 <title>Workflow Pro</title>
+<!--O que isso faz?
+
+Define o nome que aparece na aba do navegador.
+
+Por exemplo:
+
+Workflow Pro
+
+fica aparecendo lá em cima:
+
+[ Workflow Pro ]-->
 
 <link rel="stylesheet" href="style.css">
+<!--O que isso faz?
+
+Conecta o arquivo CSS ao site.
+
+É como dizer:
+
+"Pegue as roupas bonitas que estão no arquivo style.css."
+
+Sem ele, a página fica simples e sem decoração.-->
 </head>
+<!--O que isso faz?
+
+Fecha a parte do cérebro do site.
+
+Tudo que vem depois será mostrado para o usuário.-->
 <body>
+<!--O que isso faz?
 
+Aqui começa o que aparece na tela.
+
+Tudo que estiver dentro do <body> será visível.-->
 <div class="hero">
+<!--O que isso faz?
 
+Cria uma caixa invisível.
+
+Imagine uma caixa gigante guardando:
+
+título
+texto
+botão
+
+O nome da caixa é:
+
+hero
+
+O CSS vai usar esse nome para decorar essa área.-->
 <h1>Workflow Pro</h1>
+<!--O que isso faz?
 
+Cria o título principal.
+
+O navegador mostra algo parecido com:
+
+Workflow Pro
+
+O <h1> é o maior título da página.-->
 <p>Sistema Corporativo de Gestão de Projetos</p>
+<!--O que isso faz?
 
+Cria um parágrafo.
+
+Aparece assim:
+
+Sistema Corporativo de Gestão de Projetos
+
+É uma pequena explicação sobre o sistema.-->
 <a href="login.html" class="btn">
+<!--O que isso faz?
+
+Cria um link.
+
+Quando a pessoa clicar nele, irá para:
+
+login.html
+
+que provavelmente é a tela de login.
+
+O nome:
+
+class="btn"
+
+serve para o CSS transformar esse link em um botão bonito.-->    
 Entrar no Sistema
+<!--O que isso faz?
+
+É o texto que aparece dentro do botão.
+
+O usuário verá:
+
+Entrar no Sistema-->
 </a>
+<!--O que isso faz?
 
+Fecha o link/botão.-->
 </div>
+<!--O que isso faz?
 
+Fecha a caixa chamada hero.
+
+Tudo que estava dentro dela pertence ao bloco principal da página.-->
 </body>
+<!--O que isso faz?
+
+Fecha a parte visível do site.-->
 </html>
+<!--O que isso faz?
+
+Diz ao navegador:
+
+"Acabou a página."-->
+
+<!--Resultado final na tela
+
+Seu código cria algo parecido com isto:
+
+--------------------------------
+|                              |
+|        Workflow Pro          |
+|                              |
+| Sistema Corporativo de       |
+| Gestão de Projetos           |
+|                              |
+| [ Entrar no Sistema ]        |
+|                              |
+--------------------------------
+
+Fluxo simples do que acontece:
+
+Navegador abre index.html
+          ↓
+Lê o título da aba
+          ↓
+Carrega o style.css
+          ↓
+Mostra "Workflow Pro"
+          ↓
+Mostra a descrição
+          ↓
+Mostra o botão
+          ↓
+Se clicar no botão
+          ↓
+Abre login.html
+
+Esse é um ótimo exemplo de uma landing page (página inicial) para o seu sistema Workflow Pro.-->

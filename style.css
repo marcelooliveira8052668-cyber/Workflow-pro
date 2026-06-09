@@ -1,152 +1,347 @@
+/* ======================================================
+   RESET GERAL
+   ====================================================== */
+
 *{
 margin:0;
+/* Remove todos os espaços externos dos elementos.
+
+Imagine uma caixa:
+
+❌ Com espaço
+
+    [CAIXA]
+
+✅ Sem espaço
+
+[CAIXA]
+*/
+
 padding:0;
+/* Remove os espaços internos dos elementos. */
+
 box-sizing:border-box;
+/* Faz largura e altura incluírem padding e bordas.
+   Facilita muito os cálculos do layout. */
+
 font-family:Arial,sans-serif;
+/* Define a fonte padrão do site. */
 }
+
+/* O símbolo * significa:
+   Aplique essas configurações em TODOS os elementos da página.
+*/
+
+
+/* ======================================================
+   COR DE FUNDO DA PÁGINA
+   ====================================================== */
 
 body{
 background:#f4f7fc;
+/* Define a cor de fundo da página.
+   Um tom de cinza bem claro. */
 }
+
+
+/* ======================================================
+   TELA INICIAL (HERO)
+   ====================================================== */
 
 .hero{
 height:100vh;
+/* Ocupa 100% da altura da tela. */
+
 display:flex;
+/* Ativa o Flexbox. */
+
 flex-direction:column;
+/* Organiza os elementos em coluna. */
+
 justify-content:center;
+/* Centraliza verticalmente. */
+
 align-items:center;
+/* Centraliza horizontalmente. */
+
 text-align:center;
+/* Centraliza os textos. */
 }
 
 .hero h1{
 font-size:4rem;
+/* Tamanho grande para o título principal. */
+
 color:#2563eb;
+/* Cor azul do título. */
 }
 
 .hero p{
 margin:20px 0;
+/* Espaço acima e abaixo do parágrafo. */
+
 font-size:1.2rem;
+/* Texto um pouco maior que o normal. */
 }
+
+
+/* ======================================================
+   BOTÃO PADRÃO
+   ====================================================== */
 
 .btn{
 background:#2563eb;
+/* Fundo azul. */
+
 color:#fff;
+/* Texto branco. */
+
 padding:15px 30px;
+/* Espaço interno do botão. */
+
 border-radius:10px;
+/* Bordas arredondadas. */
+
 text-decoration:none;
+/* Remove sublinhado dos links. */
 }
+
+
+/* ======================================================
+   CAIXA DE LOGIN
+   ====================================================== */
 
 .login-box{
 max-width:400px;
+/* Largura máxima de 400 pixels. */
+
 margin:100px auto;
+/* Centraliza horizontalmente. */
+
 background:#fff;
+/* Fundo branco. */
+
 padding:30px;
+/* Espaço interno. */
+
 border-radius:15px;
+/* Bordas arredondadas. */
+
 box-shadow:0 10px 30px rgba(0,0,0,.1);
+/* Sombra suave. */
 }
 
 .login-box input{
 width:100%;
+/* Ocupa toda a largura disponível. */
+
 padding:15px;
+/* Espaço interno. */
+
 margin:10px 0;
+/* Espaço entre os campos. */
 }
 
 .login-box button{
 width:100%;
+/* Botão ocupa toda a largura. */
+
 padding:15px;
+
 background:#2563eb;
+/* Fundo azul. */
+
 border:none;
+/* Remove borda padrão. */
+
 color:#fff;
+/* Texto branco. */
+
 cursor:pointer;
+/* Mostra mãozinha ao passar o mouse. */
 }
+
+
+/* ======================================================
+   CABEÇALHO
+   ====================================================== */
 
 header{
 background:#2563eb;
+/* Fundo azul. */
+
 color:#fff;
+/* Texto branco. */
+
 padding:20px;
+/* Espaçamento interno. */
 }
+
+
+/* ======================================================
+   CARDS EM GRADE
+   ====================================================== */
 
 .cards{
 padding:30px;
+
 display:grid;
+/* Ativa o Grid Layout. */
+
 grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+/* Cria colunas automáticas responsivas. */
+
 gap:20px;
+/* Espaço entre os cards. */
 }
 
 .card{
 background:#fff;
+
 padding:25px;
+
 border-radius:15px;
+
 box-shadow:0 5px 20px rgba(0,0,0,.08);
+/* Sombra suave. */
 }
+
+
+/* ======================================================
+   BARRA SUPERIOR DO DASHBOARD
+   ====================================================== */
 
 .topbar{
 display:flex;
+
 justify-content:space-between;
+/* Um item em cada ponta. */
+
 align-items:center;
+/* Alinha verticalmente. */
+
 padding:20px 40px;
+
 background:#2563eb;
+
 color:#fff;
 }
 
 .topbar button{
 padding:10px 20px;
+
 border:none;
+
 cursor:pointer;
+
 background:#fff;
+
 color:#2563eb;
+
 font-weight:bold;
+/* Texto em negrito. */
+
 border-radius:6px;
 }
 
+
+/* ======================================================
+   DASHBOARD
+   ====================================================== */
+
 .dashboard{
 max-width:1200px;
+/* Largura máxima. */
+
 margin:40px auto;
+/* Centraliza na página. */
+
 display:grid;
+
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+/* Cards responsivos. */
+
 gap:20px;
+
 padding:20px;
 }
 
 .card{
 background:#fff;
+
 padding:30px;
+
 border-radius:12px;
+
 box-shadow:0 5px 15px rgba(0,0,0,.1);
+
 text-align:center;
+/* Centraliza conteúdo. */
 }
 
 .card h2{
 margin-bottom:10px;
+/* Espaço abaixo do título. */
 }
 
 .card p{
 font-size:2rem;
+/* Número grande. */
+
 font-weight:bold;
+/* Negrito. */
+
 color:#2563eb;
+/* Azul. */
 }
 
+
+/* ======================================================
+   CARD DE FUNCIONÁRIO
+   ====================================================== */
+
 .funcionario-card{
-  background:#fff;
-  border:1px solid #ddd;
-  border-radius:10px;
-  padding:15px;
-  margin-bottom:15px;
-  box-shadow:0 2px 5px rgba(0,0,0,0.1);
+background:#fff;
+/* Fundo branco. */
+
+border:1px solid #ddd;
+/* Borda cinza clara. */
+
+border-radius:10px;
+/* Bordas arredondadas. */
+
+padding:15px;
+
+margin-bottom:15px;
+/* Espaço entre funcionários. */
+
+box-shadow:0 2px 5px rgba(0,0,0,0.1);
+/* Sombra leve. */
 }
 
 .funcionario-card h3{
-  margin-bottom:10px;
+margin-bottom:10px;
+/* Espaço abaixo do nome. */
 }
 
+
+/* ======================================================
+   BOTÃO EXCLUIR
+   ====================================================== */
+
 .btn-excluir{
-  margin-top:10px;
-  padding:8px 15px;
-  border:none;
-  border-radius:6px;
-  cursor:pointer;
+margin-top:10px;
+
+padding:8px 15px;
+
+border:none;
+
+border-radius:6px;
+
+cursor:pointer;
 }
 
 .btn-excluir:hover{
-  opacity:.9;
+opacity:.9;
+/* Deixa o botão levemente transparente ao passar o mouse. */
 }
